@@ -1,19 +1,19 @@
 <odoo>
     <data>
 
-        <!-- Menú principal para acceder a los Préstamos de Productos -->
-        <menuitem id="menu_alquiler_producto_root" name="Alquiler de Productos" sequence="10"/>
-
-        <!-- Submenú para ver los préstamos -->
-        <menuitem id="menu_alquiler_producto" name="Préstamos" parent="menu_alquiler_producto_root" action="action_alquiler_producto"/>
-
-        <!-- Acción para abrir la vista de los préstamos -->
+        <!-- Acción para abrir los registros del modelo alquiler.producto -->
         <record id="action_alquiler_producto" model="ir.actions.act_window">
             <field name="name">Préstamos de Producto</field>
             <field name="res_model">alquiler.producto</field>
             <field name="view_mode">tree,form</field>
             <field name="help">Aquí puedes gestionar los préstamos de productos</field>
         </record>
+
+        <!-- Menú principal para acceder a los Préstamos de Productos -->
+        <menuitem id="menu_alquiler_producto_root" name="Alquiler de Productos" sequence="10"/>
+
+        <!-- Submenú para ver los préstamos -->
+        <menuitem id="menu_alquiler_producto" name="Préstamos" parent="menu_alquiler_producto_root" action="action_alquiler_producto"/>
 
     </data>
 </odoo>
