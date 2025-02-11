@@ -11,8 +11,9 @@
     'author': 'Pablo Muiño',
     'depends': ['base', 'sale', 'contacts'], # Requiere módulos base, ventas y contactos
     'data': [
-    'views/alquiler_productos_views.xml',
-    'security/ir.model.access.csv',
+        'views/alquiler_productos_views.xml',
+        'views/alquiler_productos_menu.xml',
+        'security/ir.model.access.csv',
     ],
     'icon': '/alquiler_productos/static/description/icon56.png',
     'installable': True,
